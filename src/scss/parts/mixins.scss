@@ -1,0 +1,47 @@
+@mixin transition($transition-property, $transition-duration, $transition-timing-function, $transition-delay) {
+    -webkit-transition: $transition-property $transition-duration $transition-timing-function $transition-delay;
+    -moz-transition:    $transition-property $transition-duration $transition-timing-function $transition-delay;
+    -ms-transition:     $transition-property $transition-duration $transition-timing-function $transition-delay;
+    -o-transition:      $transition-property $transition-duration $transition-timing-function $transition-delay;
+    transition:         $transition-property $transition-duration $transition-timing-function $transition-delay;
+}
+
+@mixin animation($animation-name, $animation-duration, $animation-delay, $animation-iteration-count, $animation-direction, $animation-timing-function, $animation-fill-mode) {
+  -webkit-animation: $animation-name $animation-duration $animation-delay $animation-iteration-count $animation-direction $animation-timing-function $animation-fill-mode;
+  -moz-animation:    $animation-name $animation-duration $animation-delay $animation-iteration-count $animation-direction $animation-timing-function $animation-fill-mode;
+  -ms-animation:     $animation-name $animation-duration $animation-delay $animation-iteration-count $animation-direction $animation-timing-function $animation-fill-mode;
+  -o-animation:      $animation-name $animation-duration $animation-delay $animation-iteration-count $animation-direction $animation-timing-function $animation-fill-mode;
+  animation:         $animation-name $animation-duration $animation-delay $animation-iteration-count $animation-direction $animation-timing-function $animation-fill-mode;
+}
+
+@mixin background($background-url, $background-repeat, $background-position, $background-type) {
+  background: $background-url;
+  background-repeat: $background-repeat;
+  background-position: $background-position;
+  background-size: $background-type;
+  -webkit-background-size: $background-type;
+  -o-background-size: $background-type;
+  -moz-background-size: $background-type;
+}
+// flex grid mixin
+
+@mixin center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin parent-flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+@mixin child-flex($flex-height, $flex-basis) {
+  height: $flex-height;
+  flex-basis: $flex-basis;
+  -ms-flex: auto;
+  width: 259px;
+  position: relative;
+  box-sizing: border-box;
+}

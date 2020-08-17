@@ -1,0 +1,139 @@
+// Mobile landscape
+@mixin sm-min-max-landscape {
+  @media (min-width: #{$sm-xs-landscape}) and (max-width: #{$sm-m-landscape}) and (orientation: landscape) {
+      @content;
+  }
+}
+
+
+// Small Phones (SE)
+
+@mixin sm-xs {
+  @media (max-width: #{$sm-xs}) {
+      @content;
+  }
+}
+@mixin sm-xs-landscape {
+  @media (max-width: #{$sm-xs-landscape}) and (orientation: landscape) {
+      @content;
+  }
+}
+
+// Medium Phones (i7)
+
+@mixin sm-s {
+  @media (min-width: #{$sm-xs}) and (max-width: #{$sm-s}) {
+      @content;
+  }
+}
+@mixin sm-s-landscape {
+  @media (min-width: #{$sm-xs-landscape}) and (max-width: #{$sm-s-landscape}) and (orientation: landscape) {
+      @content;
+  }
+}
+
+// Big Phones (Xs Max)
+
+@mixin sm-m {
+  @media (min-width: #{$sm-s}) and (max-width: #{$sm-m}) {
+      @content;
+  }
+}
+@mixin sm-m-landscape {
+  @media (min-width: #{$sm-s-landscape}) and (max-width: #{$sm-m-landscape}) and (orientation: landscape) {
+      @content;
+  }
+}
+
+// Small Dekstops (Laptops)
+
+@mixin sm-max {
+  @media (max-width: #{$dsk-xs}) {
+      @content;
+  }
+}
+
+@mixin dsk-min-max {
+  @media (min-width: #{$dsk-xs}) {
+      @content;
+  }
+}
+
+@mixin dsk-xs {
+  @media (min-width: #{$dsk-xs}) and (max-width: #{$dsk-s}) {
+      @content;
+  }
+}
+
+@mixin dsk-s {
+  @media (min-width: #{$dsk-s}) {
+      @content;
+  }
+}
+
+@mixin dsk-m {
+  @media (min-width: #{$dsk-m}) {
+      @content;
+  }
+}
+
+@mixin dsk-l {
+  @media (min-width: #{$dsk-l}) and (max-width: #{$dsk-xl}) {
+      @content;
+  }
+}
+
+//@mixin md-s-l {
+//  @media (min-width: #{$md-s}) and (max-width: #{$md-l}) {
+//      @content;
+//  }
+//}
+//
+//
+//@mixin bg-l-xl {
+//  @media (min-width: #{$md-l}) and (max-width: #{$md-xl}) {
+//      @content;
+//  }
+//}
+// Small tablets (portrait view)
+
+
+
+$sm-xs: 320px;
+$sm-xs-landscape: 568px;
+
+$sm-s: 375px;
+$sm-s-landscape: 667px;
+
+$sm-m: 500px ;
+$sm-m-landscape: 900px;
+
+
+$dsk-xs: 800px;
+$dsk-s: 1366px;
+$dsk-m: 1920px;
+$dsk-l: 2560px;
+$dsk-xl: 3840px;
+// Desktops
+
+$logo: 4rem;
+$h1-intro: 4rem;
+$h2-intro: 2rem;
+$margin-bottom-intro: 3rem;
+$margin-left: 2rem;
+$line-height: .4rem;
+$social-logo: 4rem;
+$social-logo-margin: 4rem;
+$card-height: 14rem;
+
+$padding: $logo;
+$margin: 4rem;
+$margin-card: 2rem;
+$padding-card: 2rem;
+$button: 4rem;
+$h1: 4rem;
+$h2: 4rem;
+$h3: 2rem;
+$li: 2rem;
+$margin-bottom: 2rem;
+$skills-logo: 4rem;
