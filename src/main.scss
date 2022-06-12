@@ -1,0 +1,90 @@
+@use './scss/reset.scss';
+@use './scss/style.scss';
+@use './scss/parts/mixins.scss' as *;
+
+//Images fix
+// I built this version on a previous version of webpack, and when I transfered all my project files
+// to my new webpack setup none of the images showed up
+// To only way I could get them to show is if I imported them from main.scss, not from landing-home.scss
+
+.bg:nth-child(1) {
+  @media (prefers-color-scheme: light) {
+    @include background(url("./images/camping-light-mobile.png"), no-repeat, center, cover);
+  }
+  @media (prefers-color-scheme: dark) {
+    @include background(url("./images/camping-dark-mobile.png"), no-repeat, center, cover);
+  }
+}
+.bg:nth-child(2) {
+  @media (prefers-color-scheme: light) {
+    @include background(url("./images/arch-rock-light-mobile.png"), no-repeat, center, cover);
+  }
+  @media (prefers-color-scheme: dark) {
+    @include background(url("./images/arch-rock-dark-mobile.png"), no-repeat, center, cover);
+  }
+}
+.bg:nth-child(3) {
+  @media (prefers-color-scheme: light) {
+    @include background(url("./images/kelso-dunes-light-mobile.png"), no-repeat, center, cover);
+  }
+  @media (prefers-color-scheme: dark) {
+    @include background(url("./images/kelso-dunes-dark-mobile.png"), no-repeat, center, cover);
+    }
+  }
+.bg:nth-child(4) {
+  @media (prefers-color-scheme: light) {
+    @include background(url("./images/route-light-mobile.png"), no-repeat, center, cover);
+  }
+  @media (prefers-color-scheme: dark) {
+    @include background(url("./images/route-dark-mobile.png"), no-repeat, center, cover);
+  }
+}
+
+
+.container-column:nth-child(1) {
+  .container-column-logo {
+    @include background(url("./images/bottle-of-water.svg"), no-repeat, center, cover);
+  }
+}
+.container-column:nth-child(2) {
+  .container-column-logo {
+    @include background(url("./images/sunscreen.svg"), no-repeat, center, cover);
+  }
+}
+.container-column:nth-child(3) {
+  .container-column-logo {
+    @include background(url("./images/sunglasses.svg"), no-repeat, center, cover);
+  }
+}
+.container-column:nth-child(4) {
+  .container-column-logo {
+    @media (prefers-color-scheme: light) {
+      @include background(url("./images/tshirt.svg"), no-repeat, center, cover);
+    }
+    @media (prefers-color-scheme: dark) {
+      @include background(url("./images/sweater.svg"), no-repeat, center, cover);
+    }
+  }
+}
+.container-column:nth-child(5) {
+  .container-column-logo {
+    @include background(url("./images/boots.svg"), no-repeat, center, cover);
+  }
+}
+.container-column:nth-child(6) {
+  .container-column-logo {
+    @include background(url("./images/tweezers.svg"), no-repeat, center, cover);
+  }
+}
+
+
+.item:nth-child(1) {
+  margin-left: 0;
+  @include background(url("./images/email.svg"), no-repeat, center, contain);
+}
+.item:nth-child(2) {
+  @include background(url("./images/github.svg"), no-repeat, center, contain);
+}
+.item:nth-child(3) {
+  @include background(url("./images/twitter.svg"), no-repeat, center, contain);
+}
