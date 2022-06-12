@@ -1,4 +1,4 @@
-# Webpack-Template
+# Mojave-Desert
 This is a landing page built with parallax and scroll based animations.
 It's responsive and supports light and dark theme modes based on the OS setting.
 
