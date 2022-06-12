@@ -7,6 +7,7 @@ It's responsive and supports light and dark theme modes based on the OS setting.
 - SCSS
 - GSAP
 - ScrollTrigger
+- Webpack
 
 # Live Version
 
